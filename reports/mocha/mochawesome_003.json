@@ -1,0 +1,134 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-11-01T17:27:48.904Z",
+    "end": "2021-11-01T17:28:02.496Z",
+    "duration": 13592,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "7e360635-df62-4b5e-8a54-4837428b212b",
+    "title": "",
+    "fullFile": "cypress/integration/UI Web page validation/WebPageHeaderMetaTagsForSEO.spec.js",
+    "file": "cypress/integration/UI Web page validation/WebPageHeaderMetaTagsForSEO.spec.js",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "a705a85c-25a9-4240-a9f3-06f128569c82",
+        "title": "The Document Metadata",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "looks inside <title> tag",
+            "fullTitle": "The Document Metadata looks inside <title> tag",
+            "duration": 1280,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.get('head title').should('contain', 'UI Test Automation Playground');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "662fd113-9c27-444b-a7f5-6e7b779e156a",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "looks inside <meta> tag for description",
+            "fullTitle": "The Document Metadata looks inside <meta> tag for description",
+            "duration": 4951,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "cy.get('head meta[name=\"description\"]').should('have.attr', 'content');",
+            "err": {
+              "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `head meta[name=\"description\"]`, but never found it.",
+              "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `head meta[name=\"description\"]`, but never found it.\n    at Context.eval (http://uitestingplayground.com/__cypress/tests?p=cypress\\integration\\UI%20Web%20page%20validation\\WebPageHeaderMetaTagsForSEO.spec.js:107:45)"
+            },
+            "isRoot": false,
+            "uuid": "b7ec3194-99e7-4d04-a96c-3c528b319559",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "looks inside <meta> tag for viewport",
+            "fullTitle": "The Document Metadata looks inside <meta> tag for viewport",
+            "duration": 634,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.get('head meta[name=\"viewport\"]').should('have.attr', 'content', 'width=device-width, initial-scale=1, shrink-to-fit=no');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "ea299c57-7339-4714-97bd-319f218d94a4",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "looks inside <meta> tag for robot tag",
+            "fullTitle": "The Document Metadata looks inside <meta> tag for robot tag",
+            "duration": 4809,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "cy.get('head meta[name=\"robot\"]').should('have.attr', 'content');",
+            "err": {
+              "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `head meta[name=\"robot\"]`, but never found it.",
+              "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `head meta[name=\"robot\"]`, but never found it.\n    at Context.eval (http://uitestingplayground.com/__cypress/tests?p=cypress\\integration\\UI%20Web%20page%20validation\\WebPageHeaderMetaTagsForSEO.spec.js:113:39)"
+            },
+            "isRoot": false,
+            "uuid": "522189f9-0ef4-4062-9fcf-5188b5443a9c",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "662fd113-9c27-444b-a7f5-6e7b779e156a",
+          "ea299c57-7339-4714-97bd-319f218d94a4"
+        ],
+        "failures": [
+          "b7ec3194-99e7-4d04-a96c-3c528b319559",
+          "522189f9-0ef4-4062-9fcf-5188b5443a9c"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 11674,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2021
+}

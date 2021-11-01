@@ -1,1 +1,13 @@
-{}
+{
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "html": false,
+      "json": true,
+      "overwrite": false,
+      "quite": true,
+      "reportDir": "cypress/reports/mocha"
+    }
+  }
+}
